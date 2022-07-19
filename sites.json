@@ -1,0 +1,10 @@
+[
+  {
+    "name": "https://google.com",
+    "site": "https://google.com",
+    "response_code": 200,
+    "contains": [
+      "google"
+    ]
+  }
+]

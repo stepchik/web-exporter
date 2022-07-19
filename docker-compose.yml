@@ -1,0 +1,16 @@
+version: '2'
+
+services:
+  web-exporter:
+    build: .
+    image: web-exporter
+    ports:
+      - "5555:5555"
+    volumes:
+      - ./sites.json:/app/sites.json
+    #networks:
+    #  - back-tier
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "5m"
